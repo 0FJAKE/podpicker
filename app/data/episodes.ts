@@ -1,4 +1,4 @@
-// Auto-generated from the Pod of Jake RSS feed. 244 episodes. Names normalized + bios cleaned of promo/chapter boilerplate.
+// Auto-generated from the Pod of Jake RSS feed via `npm run refresh`. 244 episodes.
 export type Episode = { num: number; guest: string; desc: string; link: string };
 
 export const episodes: Episode[] = [
