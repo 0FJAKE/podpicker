@@ -44,9 +44,12 @@ export default function Home() {
     <main className={styles.main}>
       <div className={styles.wrap}>
         <header className={styles.header}>
-          <a className={styles.kicker} href="https://podofjake.com" target="_blank" rel="noopener noreferrer">
-            ● POD OF JAKE
-          </a>
+          <div className={styles.brand}>
+            <span className={styles.mark} aria-hidden="true" />
+            <a className={styles.kicker} href="https://podofjake.com" target="_blank" rel="noopener noreferrer">
+              POD OF JAKE
+            </a>
+          </div>
           <h1 className={styles.title}>Where should you start?</h1>
           <p className={styles.sub}>
             {EPISODE_COUNT}+ episodes with founders, investors, artists, and builders. Tell me what
@@ -121,10 +124,16 @@ export default function Home() {
         )}
 
         <footer className={styles.footer}>
-          <span>Not sure? Just hit pick with nothing selected for a wildcard.</span>
+          <span className={styles.hint}>Nothing selected? Hit pick for a wildcard.</span>
           <span className={styles.links}>
+            <a href="https://podcasts.apple.com/us/podcast/pod-of-jake/id1525087226" target="_blank" rel="noopener noreferrer">
+              Apple
+            </a>
+            <a href="https://open.spotify.com/show/1ov7VtfvkAq5OCpW61ATwm" target="_blank" rel="noopener noreferrer">
+              Spotify
+            </a>
             <a href="https://podofjake.com" target="_blank" rel="noopener noreferrer">
-              podofjake.com
+              Web
             </a>
           </span>
         </footer>

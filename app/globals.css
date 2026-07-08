@@ -1,12 +1,11 @@
 :root {
-  color-scheme: dark;
-  --background: #0a0a0b;
-  --foreground: #f2f2f0;
-  --muted: #8b8b90;
-  --border: #232326;
-  --card: #141416;
-  --accent: #ff7a1a;
-  --accent-2: #ffb057;
+  color-scheme: light;
+  --bg: #ffffff;
+  --fg: #000000;
+  --muted: #6b6b6b;
+  --line: #e4e4e4;
+  --blue: #0000ff;
+  --blue-hover: #0000cc;
 }
 
 html {
@@ -21,11 +20,9 @@ body {
 
 body {
   min-height: 100%;
-  color: var(--foreground);
-  background:
-    radial-gradient(900px 500px at 50% -10%, rgba(255, 122, 26, 0.14), transparent 70%),
-    var(--background);
-  font-family: var(--font-geist-sans), Arial, Helvetica, sans-serif;
+  color: var(--fg);
+  background: var(--bg);
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
@@ -37,6 +34,10 @@ body {
 }
 
 a {
-  color: inherit;
+  color: var(--blue);
   text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
 }
